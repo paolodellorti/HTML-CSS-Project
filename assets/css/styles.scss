@@ -1,0 +1,534 @@
+$verde: #67cf71;
+$nero: #363636;
+$main-bg: linear-gradient(90deg, rgba(195,195,195,1) 0%, rgba(255,255,255,1) 50%, rgba(195,195,195,1) 100%);
+$min-bg: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,255,255,1) 50%, rgba(210,210,210,1) 100%);
+
+
+@import "font";
+@import "scrollbar";
+@import "dinamic-text";
+@import "navbar";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.bordi {//da cancellareee
+	border: solid 2px black;
+}
+
+html {
+	-ms-scroll-snap-type: proximity;
+	scroll-snap-type: proximity;
+	-ms-scroll-snap-type: y proximity;
+	scroll-snap-type: y proximity;
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	color: $nero;
+	font-family: 'Quicksand', sans-serif;
+	overflow: overlay; //serve per scrollbar
+	height: 100%;
+}
+
+.centro {
+	text-align: center;
+}
+
+section {
+	width: 100%;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+
+
+	a{
+		text-decoration: none;
+		color: $verde;
+		font-weight: bold;
+		transition: 0.2s;
+	}
+
+	a:visited {
+		color: $verde;
+	}
+
+	a:hover {
+		color: rgba(103,207,113, 0.6);
+	}
+}
+
+p {
+	letter-spacing: -1px;
+}
+
+.section-container {
+	width: 70%;
+	min-height: 100vh;
+	height: 100%;
+	margin: auto;
+	border-bottom: 1px solid rgba(54,54,54,0.1);
+
+	.content {
+		width: 100%;
+	}
+}
+
+h3 {
+	font-family: "IBMPlex";
+	color: $verde;
+	margin-top: 160px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+h3:nth-of-type(1) {
+	margin-top: 0;
+}
+
+
+#home {
+	background:  radial-gradient(circle, #454545, black);
+  color: white;
+	text-align: left;
+	font-size: calc(1rem + 2vw);
+
+
+	.section-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	h1 {
+		font-family: 'IBMPlex';
+	  text-shadow: -4px 4px 2px rgba(0,0,0,0.8);
+
+		span {
+			font-family: 'IBMPlex';
+			color: $verde;
+		}
+	}
+
+	.arrow {
+		box-sizing: border-box;
+		height: 70px;
+		width: 70px;
+		border-style: solid;
+		border-color: white;
+		border-width: 0px 2px 2px 0px;
+		transform: rotate(45deg);
+		transition: border-width 200ms ease-in-out;
+	}
+
+	.arrow:hover {
+		border-bottom-width: 4px;
+		border-right-width: 4px;
+		border-color: $verde;
+	}
+}
+
+#about {
+	background: $main-bg;
+
+	.section-container {
+		font-size: calc(1rem + 0.8vw);
+		padding-bottom: 15%;
+
+		.content {
+			padding-top: 100px;
+
+			h3 {
+				font-weight: bold;
+			}
+
+			p {
+			  padding-top: 30px;
+				text-align: left;
+				width: 65%;
+				margin: auto;
+			}
+
+			.centro {
+				padding-bottom: 25px;
+				text-align: center;
+				width: 100%;
+			}
+
+			.foto-profilo {
+ 				float: right;
+				margin-right: 10px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 13vw;
+				min-width: 130px;
+				border-radius: 5px;
+			}
+
+			.skill {
+				margin: auto;
+				margin-bottom: 20px;
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.stelle {
+				width: 24vw;
+				height: 12vh;
+				position: relative;
+			}
+
+			.back {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1;
+			}
+
+			.front {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: 0.5s;
+			}
+
+			.front:hover {
+				opacity: 1;
+			}
+
+			.back:hover {
+				opacity: 0;
+			}
+
+			.duen {
+				background: url('../img/2nere.png') left no-repeat;
+				background-size: contain;
+			}
+
+			.duev {
+				background: url('../img/2verdi.png') left no-repeat;
+				background-size: contain;
+			}
+
+			.unan {
+				background: url('../img/1nera.png') left no-repeat;
+				background-size: contain;
+			}
+
+			.unav {
+				background: url('../img/1verde.png') left no-repeat;
+				background-size: contain;
+			}
+
+			ul {
+				list-style-type: none;
+				width: 75%;
+				display: table;
+				margin: 0 auto;
+				text-align: center;
+
+				li {
+					padding-top: 30px;
+					transition: 0.3s;
+					text-align: left;
+				}
+
+				li:hover {
+						transform: translateY(-10px);
+						text-shadow: 0px 10px 15px rgba(0,0,0,0.6);
+				}
+			}
+		}
+	}
+}
+
+#projects {
+	height: 100%;
+
+	background: $main-bg;
+
+	.section-container {
+		font-size: calc(1rem + 0.8vw);
+
+		.content {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			p {
+				line-height: 1.5;
+			}
+
+			h3 {
+				margin-top: 50px;
+			}
+
+			.icon-container {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+					.icon {
+						width: 200px;
+						height: 75px;
+						transition: 0.2s;
+					}
+
+					.py {
+						background: url("../img/python-icon.svg") center no-repeat;
+						background-size: 70%;
+					}
+
+					.py:hover {
+						background: url("../img/pythonG-icon.svg") center no-repeat;
+						background-size: 70%;
+					}
+
+					.qm {
+						background: url("../img/question-icon.svg") center no-repeat;
+						background-size: 30%;
+					}
+
+					.qm:hover {
+						background: url("../img/questionG-icon.svg") center no-repeat;
+						background-size: 28.5%;
+					}
+
+					.iconLink {
+						display: block;
+						height: 100%;
+						width: 100%;
+					}
+				}
+		}
+	}
+}
+
+
+
+#contact {
+
+	background: $main-bg;
+	height: 100%;
+
+	.section-container {
+		font-size: calc(1rem + 0.8vw);
+		height: 100%;
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			height: 100%;
+
+			p {
+				line-height: 1.5;
+			}
+
+			h3 {
+				margin-top: 50px;
+			}
+
+			a {
+				transition: all 0.2s;
+			}
+
+			a:hover {
+				font-size: 0.97em;
+				text-shadow: 5px 5px 40px rgba(0,0,0,0.2);
+				color: $verde;
+			}
+
+				.icon-container {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					align-items: center;
+
+
+						.icon {
+							width: 20%;
+							min-width: 150px;
+							height: 75px;
+							transition: 0.2s;
+						}
+
+						.insta {
+							background: url("../img/instagram-icon.svg") center no-repeat;
+							background-size: 30%;
+						}
+
+						.insta:hover {
+							background: url("../img/instagramG-icon.svg") center no-repeat;
+							background-size: 28.5%;
+						}
+
+						.fb {
+							background: url("../img/facebook-icon.svg") center no-repeat;
+							background-size: 30%;
+						}
+
+						.fb:hover {
+							background: url("../img/facebookG-icon.svg") center no-repeat;
+							background-size: 28.5%;
+						}
+
+						.linke {
+							background: url("../img/linkedin-icon.svg") center no-repeat;
+							background-size: 30%;
+						}
+
+						.linke:hover {
+							background: url("../img/linkedinG-icon.svg") center no-repeat;
+							background-size: 28.5%;
+						}
+
+						.iconLink {
+							display: block;
+							height: 100%;
+							width: 100%;
+						}
+					}
+
+	}
+}
+}
+
+@media screen and (max-width: 768px) {
+
+	.section-container {
+		width: 90%;
+
+	}
+
+	#navbar {
+		.container {
+			width: 90%;
+			ul {
+				li {
+					a {
+						padding: 10px 10px;
+					}
+				}
+			}
+		}
+	}
+
+	#home {
+		line-height: 1.7;
+
+	}
+
+	#about {
+		background: $min-bg;
+		line-height: 1.3;
+
+		.section-container {
+
+			.content {
+
+				p {
+					width: 85%;
+				}
+
+				.stelle {
+					width: 40vw;
+					height: 20vh;
+				}
+
+				.front:hover {
+					opacity: 0;
+				}
+
+
+				.duen {
+					background: url('../img/2nereMobile.png') left no-repeat;
+					background-size: contain;
+				}
+
+				.unan {
+					background: url('../img/1neraMobile.png') left no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+
+	#projects {
+		background: $min-bg;
+
+		.section-container {
+
+			.content {
+
+				p {
+					line-height: 2.2;
+				}
+			}
+		}
+	}
+
+	#contact {
+		background: $min-bg;
+
+		.section-container {
+
+			.content {
+
+				p {
+					line-height: 2.2;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	#navbar {
+		font-size: 0.7em;
+		.container {
+			width: 100%;
+			ul {
+				li {
+					a {
+						padding: 5px 5px;
+					}
+				}
+			}
+		}
+	}
+#about {
+	background: $min-bg;
+	line-height: 1.3;
+
+	.section-container {
+
+		.content {
+
+			.stelle {
+				width: 34vw;
+				height: 17vh;
+			}
+		}
+	}
+}
+}

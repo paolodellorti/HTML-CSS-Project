@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Regular.woff2') format('woff2'),
+        url('../font/Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Light.woff2') format('woff2'),
+        url('../font/Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Italic.woff2') format('woff2'),
+        url('../font/Quicksand-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Bold.woff2') format('woff2'),
+        url('../font/Quicksand-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Bolditalic.woff2') format('woff2'),
+        url('../font/Quicksand-Bolditalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlex';
+    src: url('../font/ibm-plex-mono-v6-latin-200.woff2') format('woff2'),
+        url('../font/ibm-plex-mono-v6-latin-200.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
