@@ -178,11 +178,10 @@ h3[data-scroll="in"]:before {
 }
 
 html {
-  -ms-scroll-snap-type: proximity;
-  scroll-snap-type: proximity;
   -ms-scroll-snap-type: y proximity;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
 }
 

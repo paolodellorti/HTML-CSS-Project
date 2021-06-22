@@ -20,11 +20,10 @@ $min-bg: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,255,255,1) 50%,
 }
 
 html {
-	-ms-scroll-snap-type: proximity;
-	scroll-snap-type: proximity;
 	-ms-scroll-snap-type: y proximity;
 	scroll-snap-type: y proximity;
 	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
 	height: 100%;
 }
 
