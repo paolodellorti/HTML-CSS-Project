@@ -577,6 +577,11 @@ h3:nth-of-type(1) {
     color: #67cf71 !important;
     opacity: 1;
   }
+  #home .arrow:hover {
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-color: white;
+  }
   #about .section-container .content .front:hover {
     opacity: 0;
   }
@@ -602,11 +607,6 @@ h3:nth-of-type(1) {
   }
   #home {
     line-height: 1.7;
-  }
-  #home .arrow:hover {
-    border-bottom-width: 2px;
-    border-right-width: 2px;
-    border-color: white;
   }
   #about {
     background: linear-gradient(90deg, #d2d2d2 0%, white 50%, #d2d2d2 100%);

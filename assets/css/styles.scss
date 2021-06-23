@@ -440,6 +440,14 @@ h3:nth-of-type(1) {
 		}
 	}
 
+	#home {
+		.arrow:hover {
+			border-bottom-width: 2px;
+			border-right-width: 2px;
+			border-color: white;
+		}
+	}
+
 	#about {
 		.section-container {
 			.content {
@@ -482,13 +490,6 @@ h3:nth-of-type(1) {
 
 	#home {
 		line-height: 1.7;
-
-		.arrow:hover {
-			border-bottom-width: 2px;
-			border-right-width: 2px;
-			border-color: white;
-		}
-
 	}
 
 	#about {
