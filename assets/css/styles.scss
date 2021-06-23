@@ -429,6 +429,14 @@ h3:nth-of-type(1) {
 					a {
 						padding: 10px 10px;
 					}
+					a:hover {
+						 color: white !important;
+					 }
+				}
+
+				li.home a:hover {
+					color: $verde !important;
+					opacity: 1;
 				}
 			}
 		}
@@ -436,6 +444,12 @@ h3:nth-of-type(1) {
 
 	#home {
 		line-height: 1.7;
+
+		.arrow:hover {
+			border-bottom-width: 2px;
+			border-right-width: 2px;
+			border-color: white;
+		}
 
 	}
 

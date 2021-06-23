@@ -575,8 +575,20 @@ h3:nth-of-type(1) {
   #navbar .container ul li a {
     padding: 10px 10px;
   }
+  #navbar .container ul li a:hover {
+    color: white !important;
+  }
+  #navbar .container ul li.home a:hover {
+    color: #67cf71 !important;
+    opacity: 1;
+  }
   #home {
     line-height: 1.7;
+  }
+  #home .arrow:hover {
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-color: white;
   }
   #about {
     background: linear-gradient(90deg, #d2d2d2 0%, white 50%, #d2d2d2 100%);
