@@ -37,7 +37,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0px;
-	padding: 0px;
+	padding-bottom: -50px;
 }
 
 .centro {
@@ -504,6 +504,8 @@ h3:nth-of-type(1) {
 
 	#contact {
 		background: $min-bg;
+		bottom: 0 !important;
+
 
 		.section-container {
 
