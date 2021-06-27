@@ -109,25 +109,26 @@ section {
 					text-decoration: none;
           color: white;
 					transition: 0.3s;
-				 }
+				}
 
         a:visited {
            color: white;
-         }
+        }
 
         a:hover {
            color: $verde;
-         }
+        }
 			 }
 
 			li.active {
 				border-bottom: solid 4px $verde;
         margin-bottom: 0px;
 				transition: all 0.3s;
+
 				a {
 					font-weight: bold;
 				}
-			}
+		   }
 
 			li.home {
 				transform: translateY(1px);
@@ -199,6 +200,7 @@ section {
 		  padding-top: 30px;
 			text-align: left;
 			margin: auto;
+			width: 65%;
 		}
 
 		p:nth-of-type(5) {
@@ -311,53 +313,53 @@ section {
 		justify-content: space-around;
 		align-items: center;
 
-			p {
-				line-height: 1.5;
-			}
-
-			h3 {
-				margin-top: 50px;
-			}
-
-			.icon-container {
-				width: 100%;
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-
-					.icon {
-						width: 200px;
-						height: 75px;
-						transition: 0.2s;
-					}
-
-					.py {
-						background: url("../img/python-icon.svg") center no-repeat;
-						background-size: 70%;
-					}
-
-					.py:hover {
-						background: url("../img/pythonG-icon.svg") center no-repeat;
-						background-size: 70%;
-					}
-
-					.qm {
-						background: url("../img/question-icon.svg") center no-repeat;
-						background-size: 30%;
-					}
-
-					.qm:hover {
-						background: url("../img/questionG-icon.svg") center no-repeat;
-						background-size: 28.5%;
-					}
-
-					.iconLink {
-						display: block;
-						height: 100%;
-						width: 100%;
-			}
-		}
+	p {
+		line-height: 1.5;
 	}
+
+	h3 {
+		margin-top: 50px;
+	}
+
+	.icon-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.icon {
+			width: 200px;
+			height: 75px;
+			transition: 0.2s;
+		}
+
+		.py {
+			background: url("../img/python-icon.svg") center no-repeat;
+			background-size: 70%;
+		}
+
+		.py:hover {
+			background: url("../img/pythonG-icon.svg") center no-repeat;
+			background-size: 70%;
+		}
+
+		.qm {
+			background: url("../img/question-icon.svg") center no-repeat;
+			background-size: 30%;
+		}
+
+		.qm:hover {
+			background: url("../img/questionG-icon.svg") center no-repeat;
+			background-size: 28.5%;
+		}
+
+		.iconLink {
+			display: block;
+			height: 100%;
+			width: 100%;
+		 }
+	 }
+  }
 }
 
 
@@ -374,72 +376,72 @@ section {
 		justify-content: space-around;
 		align-items: center;
 
-			p {
-				line-height: 1.5;
+		p {
+			line-height: 1.5;
+		}
+
+		h3 {
+			margin-top: 50px;
+		}
+
+		a {
+			transition: all 0.2s;
+		}
+
+		a:hover {
+			font-size: 0.97em;
+			text-shadow: 5px 5px 40px rgba(0,0,0,0.2);
+			color: $verde;
+		}
+
+		.icon-container {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+
+			.icon {
+				width: 10%;
+				min-width: 50px;
+				height: 75px;
+				transition: 0.2s;
 			}
 
-			h3 {
-				margin-top: 50px;
+			.insta {
+				background: url("../img/instagram-icon.svg") center no-repeat;
+				background-size: 60%;
 			}
 
-			a {
-				transition: all 0.2s;
+			.insta:hover {
+				background: url("../img/instagramG-icon.svg") center no-repeat;
+				background-size: 56%;
 			}
 
-			a:hover {
-				font-size: 0.97em;
-				text-shadow: 5px 5px 40px rgba(0,0,0,0.2);
-				color: $verde;
+			.fb {
+				background: url("../img/facebook-icon.svg") center no-repeat;
+				background-size: 60%;
 			}
 
-				.icon-container {
-					width: 100%;
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-around;
-					align-items: center;
+			.fb:hover {
+				background: url("../img/facebookG-icon.svg") center no-repeat;
+				background-size: 56%;
+			}
 
-						.icon {
-							width: 10%;
-							min-width: 50px;
-							height: 75px;
-							transition: 0.2s;
-						}
+			.linke {
+				background: url("../img/linkedin-icon.svg") center no-repeat;
+				background-size: 60%;
+			}
 
-						.insta {
-							background: url("../img/instagram-icon.svg") center no-repeat;
-							background-size: 60%;
-						}
+			.linke:hover {
+				background: url("../img/linkedinG-icon.svg") center no-repeat;
+				background-size: 56%;
+			}
 
-						.insta:hover {
-							background: url("../img/instagramG-icon.svg") center no-repeat;
-							background-size: 56%;
-						}
-
-						.fb {
-							background: url("../img/facebook-icon.svg") center no-repeat;
-							background-size: 60%;
-						}
-
-						.fb:hover {
-							background: url("../img/facebookG-icon.svg") center no-repeat;
-							background-size: 56%;
-						}
-
-						.linke {
-							background: url("../img/linkedin-icon.svg") center no-repeat;
-							background-size: 60%;
-						}
-
-						.linke:hover {
-							background: url("../img/linkedinG-icon.svg") center no-repeat;
-							background-size: 56%;
-						}
-
-						.iconLink {
-							display: block;
-							height: 100%;
-							width: 100%;
+			.iconLink {
+				display: block;
+				height: 100%;
+				width: 100%;
 		  }
 		}
   }

@@ -286,6 +286,7 @@ section {
   padding-top: 30px;
   text-align: left;
   margin: auto;
+  width: 65%;
 }
 
 #about .section-container p:nth-of-type(5) {
