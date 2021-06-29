@@ -459,7 +459,6 @@ section {
 		.nav-container {
 			ul {
 				li {
-
 					a:hover {
 						 color: #ffffff !important;
 					 }
@@ -474,7 +473,6 @@ section {
 	}
 
 	#home {
-
 		.arrow:hover {
 			border-bottom-width: 2px;
 			border-right-width: 2px;
@@ -483,21 +481,23 @@ section {
 	}
 
 	#about {
-
 		.section-container {
+			.skill {
+				.stelle {
+					.front:hover {
+						opacity: 0;
+					}
 
-				.front:hover {
-					opacity: 0;
+					.duen {
+						background: url('../img/2nereMobile.png') left no-repeat;
+						background-size: contain;
+					}
+
+					.unan {
+						background: url('../img/1neraMobile.png') left no-repeat;
+						background-size: contain;
+				  }
 				}
-
-				.duen {
-					background: url('../img/2nereMobile.png') left no-repeat;
-					background-size: contain;
-				}
-
-				.unan {
-					background: url('../img/1neraMobile.png') left no-repeat;
-					background-size: contain;
 			}
 		}
 	}
@@ -596,7 +596,6 @@ section {
 
 	#projects {
 		line-height: 1.7;
-
 	}
 
 	#contact {

@@ -546,14 +546,14 @@ section {
     border-right-width: 2px;
     border-color: #ffffff;
   }
-  #about .section-container .front:hover {
+  #about .section-container .skill .stelle .front:hover {
     opacity: 0;
   }
-  #about .section-container .duen {
+  #about .section-container .skill .stelle .duen {
     background: url("../img/2nereMobile.png") left no-repeat;
     background-size: contain;
   }
-  #about .section-container .unan {
+  #about .section-container .skill .stelle .unan {
     background: url("../img/1neraMobile.png") left no-repeat;
     background-size: contain;
   }
