@@ -102,7 +102,6 @@ html {
   -ms-scroll-snap-type: y proximity;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -114,6 +113,26 @@ body {
 section {
   width: 100%;
   scroll-snap-align: start;
+}
+
+#ImgPreload {
+  width: 0px;
+  height: 0px;
+  display: none;
+  background-image: url("../img/2nere.png");
+  background-image: url("../img/2verdi.png");
+  background-image: url("../img/1nera.png");
+  background-image: url("../img/1verde.png");
+  background-image: url("../img/python-icon.svg");
+  background-image: url("../img/pythonG-icon.svg");
+  background-image: url("../img/question-icon.svg");
+  background-image: url("../img/questionG-icon.svg");
+  background-image: url("../img/instagram-icon.svg");
+  background-image: url("../img/instagramG-icon.svg");
+  background-image: url("../img/facebook-icon.svg");
+  background-image: url("../img/facebookG-icon.svg");
+  background-image: url("../img/linkedin-icon.svg");
+  background-image: url("../img/linkedinG-icon.svg");
 }
 
 .section-container {
@@ -286,11 +305,11 @@ section {
   padding-top: 30px;
   text-align: left;
   margin: auto;
-  width: 65%;
+  width: 75%;
 }
 
 #about .section-container p:nth-of-type(5) {
-  width: 100%;
+  width: 75%;
   margin-bottom: 30px;
 }
 
@@ -468,13 +487,17 @@ section {
   margin-top: 50px;
 }
 
+#contact .section-container h4 {
+  font-family: 'IBMPlex';
+}
+
 #contact .section-container a {
   transition: all 0.2s;
 }
 
 #contact .section-container a:hover {
   font-size: 0.97em;
-  text-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+  text-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
   color: #67cf71;
 }
 
